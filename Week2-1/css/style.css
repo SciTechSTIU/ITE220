@@ -18,7 +18,7 @@ body {
 }
 
 .content .content-container {
-	border-color: grey;
+	border-color: gray;
 	border-size: 1px; /* this allows you to adjust the thickness */
 	border-style: solid;
 	width: 470px;
