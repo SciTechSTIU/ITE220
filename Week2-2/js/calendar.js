@@ -3,7 +3,7 @@ var hotelTable = document.getElementById("hotelCalendarTable");
 var defaultData = hotelTable.innerHTML;
 var stringHTML = "";
 
-var numbers = [1,2,3,4,5,6,7];
+var numbers = [1, 2, 3, 4, 5, 6, 7];
 
 for (i = 0; i < 5; i++) {
 	
@@ -18,7 +18,7 @@ for (i = 0; i < 5; i++) {
 
 		stringHTML += "<td>" + (numbers[k] + (7 * i) ) + "</td>"
 	}
-	
+
 	stringHTML+="<tr>"
 }
 
