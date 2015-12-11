@@ -14,16 +14,16 @@ for (var i = 0; i < 31; i++) {
 	stringHTML += "</td>";
 
 	switch (d[i]) {
-		case 8:
+		case 7:
 			stringHTML += "</tr><tr>"
 			break;
-		case 15:
+		case 14:
 			stringHTML += "</tr><tr>"
 			break;
-		case 22:
+		case 21:
 			stringHTML += "</tr><tr>"
 			break;
-		case 29:
+		case 28:
 			stringHTML += "</tr><tr>"
 			break;
 	}
