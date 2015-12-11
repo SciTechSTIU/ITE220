@@ -1,25 +1,34 @@
 // display the calendar here
 var hotelTable = document.getElementById("hotelCalendarTable");
-var defaultData = hotelTable.innerHTML;
-var stringHTML = "";
+var stringHTML = "<tr>";
 
-var numbers = [1, 2, 3, 4, 5, 6, 7];
+var d = [];
 
-for (i = 0; i < 5; i++) {
-	
-	stringHTML += "<tr>"
-
-	for (k = 0; k < 7; k++) {
-
-		if ( (numbers[k] + (7 * i) ) > 31) {
-
-			break;
-		}
-
-		stringHTML += "<td>" + (numbers[k] + (7 * i) ) + "</td>"
-	}
-
-	stringHTML+="<tr>"
+for (var i = 0; i < 32; i++) {
+	d[i] = i + 1;
 }
+
+for (var i = 0; i < 31; i++) {
+	stringHTML += "<td>";
+	stringHTML += d[i];
+	stringHTML += "</td>";
+
+	switch (d[i]) {
+		case 8:
+			stringHTML += "</tr><tr>"
+			break;
+		case 15:
+			stringHTML += "</tr><tr>"
+			break;
+		case 22:
+			stringHTML += "</tr><tr>"
+			break;
+		case 29:
+			stringHTML += "</tr><tr>"
+			break;
+	}
+}
+
+stringHTML += "</tr>";
 
 hotelTable.innerHTML += stringHTML;
