@@ -1,1 +1,1 @@
-$(':header').addClass('headline');$('li:lt(3)').hide().fadeIn(1500);$('li').on('click', function() {  $(this).remove();});
+$(':header').addClass('headline');$('#header').on('click', function() {	$('li.cool').show().fadeIn(1500);});$('li:lt(3)').hide().fadeIn(1500);$('li.cool').on('click', function() {  	$(this).hide();});
