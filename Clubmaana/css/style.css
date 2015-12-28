@@ -1,0 +1,314 @@
+@charset "UTF-8";
+/* CSS Document */
+
+header {
+	padding-top: 10px;
+	height: 150px;
+}
+#logo {
+	padding-top: 15px;
+	padding-left: 10px;
+	height: 132px;
+}
+#banner{
+	float: right;
+	padding-right: 25px;
+	height: 147px;
+	width: 300;
+}
+#brnd {
+	padding-left: 35px;
+}
+section {
+	border: 0;
+	padding-top:10px;
+	padding-bottom: 10px;
+	border-top: 1px solid #e5e5e5;
+	vertical-align:middle;
+}
+
+section li {
+	text: 1px dotted #bbb;
+}
+
+footer {
+	padding-top:10px;
+	border-top: 1px solid #e5e5e5;
+}
+#breadcrumbs {
+	border-bottom: 1px solid #e5e5e5;
+}
+#map-container{
+	height: 400px;
+	margin-top: 40px;
+}
+#address {
+	padding-top: 40px;	
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+
+.carousel .container {
+  position: relative;
+}
+
+.carousel-control {
+  padding-top: 20px;
+  height: 50px;
+  font-size: 100px;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+  background-color: transparent;
+  border: 0;
+}
+
+.carousel .item {
+  height: 400px;
+}
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 400px;
+}
+
+.carousel-caption {
+  background-color: transparent;
+  position: static;
+  max-width: 700px;
+  padding: 0 100px;
+  margin-top: 100px;
+}
+.carousel-caption h1,
+.carousel-caption .lead {
+  margin: 0;
+  line-height: 1.25;
+  color: #FFF;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+.carousel-caption .btn {
+  margin-top: 10px;
+}
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .span4 {
+  text-align: center;
+}
+.marketing h2 {
+
+}
+.marketing .span4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.container .container.marketing {
+	padding-top: 0px;
+	padding-bottom: 20px;
+}
+.marketing .row {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+	margin-top: 20px;
+	margin-right: 0;
+	margin-left: 0;
+	margin-bottom: 20px; /* Space out the Bootstrap <hr> more */
+}
+.featurette {
+	padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+	overflow: hidden; /* Vertically center images part 2: clear their floats. */
+}
+.featurette-image {
+  margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+}
+
+/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+.featurette-image.pull-left {
+  margin-right: 40px;
+}
+.featurette-image.pull-right {
+  margin-left: 40px;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.row .span7.offset1 #comessage {
+	margin-top: 55px;
+	font-family: logoMessage;
+	font-size: 21px;
+	font-weight: 300;
+	color: #333333;
+}
+
+@font-face {
+    font-family: logoMessage;
+    src: url(../fonts/Sofia-Regular.otf);
+}
+#f {
+	color: #3b5998;
+}
+#t {
+	color: #00aced;
+
+}
+#y {
+	color: #bb0000;
+}
+#g {
+	color: #dd4b39;
+}
+
+
+
+
+
+@media (max-width: 979px) {
+	.carousel .item {
+	height: 300px;
+	}
+	.carousel img {
+	height: 300px;
+	}
+	.carousel-caption {
+	margin-top: 50px;
+	}
+	.carousel-caption h1 {
+	}
+	.carousel-caption .lead,
+	.carousel-caption .btn {
+	}
+	.featurette {
+	height: auto;
+	padding: 0;
+	}
+	.featurette-image.pull-left,
+	.featurette-image.pull-right {
+	display: block;
+	float: none;
+	max-width: 40%;
+	margin: 0 auto 20px;
+	}
+	.row .span7.offset1 #comessage {
+	margin-top: 35px;
+	}
+	.navbar-inner .container .nav-collapse.collapse.pull-right {
+	float: none;
+	}
+#banner   {
+	padding-right: 0px;
+	padding-bottom: 2px;
+	height: auto;
+
+}
+#logo   {
+	padding-top: 25px;
+	padding-left: 10px;
+	height: auto;
+	}
+	header  {
+	height: auto;
+	}
+}
+@media (max-width: 767px) {
+	  .carousel {
+	  }
+	  .carousel .container {
+	  }
+	  .carousel .item {
+		height: 200px;
+	  }
+	  .carousel img {
+		height: 200px;
+	  }
+	  .carousel-caption {
+		margin-top: 15px;
+	  }
+	  .carousel-caption h1 {
+		font-size: 25px;
+	  }
+	  .carousel-caption .lead {
+		font-size: 15px;
+	  }
+	  .carousel-caption .btn {
+	  }
+	  .featurette-heading {
+		font-size: 30px;
+	  }
+	  .featurette .lead {
+		font-size: 18px;
+		line-height: 1.5;
+	  }
+	  .container .container.marketing .row {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	  }
+	  .container.marketing .row .span4 {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	  }
+	.row .span7.offset1 #comessage {
+		margin-top: 0px;
+	}
+	.navbar-inner .container .nav-collapse.collapse.pull-right {
+	float: none;
+	text-align: center;
+	}
+header .span3 {
+	width: 0px;
+	height: 0px;
+	visibility: hidden;
+}
+.row .span4.offset5 #banner {
+	width: auto;
+	height: auto;
+	padding-bottom: 5px;
+	float: none;
+}
+#social {
+	text-align: left;
+}
+
+
+}
+
+@media (max-width:480px){
+.container #myCarousel {
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+}
+#brnd {
+	padding-left: 0px;
+}
+
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

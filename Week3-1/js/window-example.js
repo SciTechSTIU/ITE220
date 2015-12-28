@@ -15,11 +15,11 @@ var myWindow = {
 		var eleY = document.getElementById("sy");
 		eleY.value = this.screeny;
 
-		var eleW = document.getElementById("sw");
-		eleW.value = this.screenWidth;
-
 		var eleH = document.getElementById("sh");
 		eleH.value = this.screenHeight;
+		
+		var eleW = document.getElementById("sw");
+		eleW.value = this.screenWidth;
 	}
 };
 

@@ -4,84 +4,85 @@ var game = {
 		var self = this;
 		
 		// Number 0
-		var ele = document.getElementById("zero");
-		ele.addEventListener("click", function(){
+		var elZero = document.getElementById('zero');
+		elZero.addEventListener('click', function() {
 			self.click(0);
 		}, false);
 
 		// Number 1
-		var ele = document.getElementById("one");
-		ele.addEventListener("click", function(){
+		var elOne = document.getElementById('one');
+		elOne.addEventListener('click', function() {
 			self.click(1);
 		}, false);
 
 		// Number 2
-		var ele = document.getElementById("two");
-		ele.addEventListener("click", function(){
+		var elTwo = document.getElementById('two');
+		elTwo.addEventListener('click', function() {
 			self.click(2);
 		}, false);
 
 		// Number 3
-		var ele = document.getElementById("three");
-		ele.addEventListener("click", function(){
+		var elThree = document.getElementById('three');
+		elThree.addEventListener('click', function() {
 			self.click(3);
 		}, false);
 
 		// Number 4
-		var ele = document.getElementById("four");
-		ele.addEventListener("click", function(){
+		var elFour = document.getElementById('four');
+		elFour.addEventListener('click', function() {
 			self.click(4);
 		}, false);
 
 		// Number 5
-		var ele = document.getElementById("five");
-		ele.addEventListener("click", function(){
+		var elFive = document.getElementById('five');
+		elFive.addEventListener('click', function() {
 			self.click(5);
 		}, false);
 
 		// Number 6
-		var ele = document.getElementById("six");
-		ele.addEventListener("click", function(){
+		var elSix = document.getElementById('six');
+		elSix.addEventListener('click', function() {
 			self.click(6);
 		}, false);
 
 		// Number 7
-		var ele = document.getElementById("seven");
-		ele.addEventListener("click", function(){
+		var elSeven = document.getElementById('seven');
+		elSeven.addEventListener('click', function() {
 			self.click(7);
 		}, false);
 
 		// Number 8
-		var ele = document.getElementById("eight");
-		ele.addEventListener("click", function(){
+		var elEight = document.getElementById('eight');
+		elEight.addEventListener('click', function() {
 			self.click(8);
 		}, false);
 
 		// Number 9
-		var ele = document.getElementById("nine");
-		ele.addEventListener("click", function(){
+		var elNine = document.getElementById('nine');
+		elNine.addEventListener('click', function() {
 			self.click(9);
 		}, false);
 
 
-		// Guess!
-		var ele = document.getElementById("guess");
-		ele.addEventListener("click",function(){
+		// Guess
+		var elGuess = document.getElementById('guess');
+		elGuess.addEventListener('click', function() {
 			self.checkAnswer(self);
-			}, false);
+		}, false);
 	},
 	
 	click: function(value) {
 		console.log(value + " clicked.");
-		var userValueEle = document.getElementById("userValue");
+		var userValueEle = document.getElementById('userValue');
 		userValueEle.value += value;
-	}, 
+	},
+
 	checkAnswer: function(self) {
-		var userValueEle = document.getElementById("userValue");
-		if(self.answer == userValueEle.value){
+		var userValueEle = document.getElementById('userValue');
+		if (self.answer == userValueEle.value) {
 			alert("Congratulations! Correct answer");			
 		} else if (self.answer > userValueEle.value) {
-				alert("Guessing number is less than the correct number"); 
+			alert("Guessing number is less than the correct number"); 
 		} else if (self.answer < userValueEle.value) {
 			alert("Guessing number is more than the correct number");
 		}
