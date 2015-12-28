@@ -90,6 +90,22 @@
 					<img class="thumbnail" src="http://placehold.it/300x300">
 				</div>
 			</div>
+			<div class="column image-flip">
+				<div>
+					<img class="thumbnail" src="http://placehold.it/300x300">
+				</div>
+				<div>
+					<img class="thumbnail" src="http://placehold.it/300x300">
+				</div>
+			</div>
+			<div class="column image-flip">
+				<div>
+					<img class="thumbnail" src="http://placehold.it/300x300">
+				</div>
+				<div>
+					<img class="thumbnail" src="http://placehold.it/300x300">
+				</div>
+			</div>			
 		</div>
 
 		
@@ -102,15 +118,16 @@
 				    <div class="small-8 columns">
 				      <div class="row">
 				        <div class="small-12 columns">
-				          <input type="text" id="form-name" placeholder="Your Name">
+				          <input class="form-with-error" type="text" id="form-name" placeholder="Your Name">
+				            <small class="error">Invalid entry</small>
 
-				          <input type="text" id="form-number" class="form-with-error" placeholder="Your Telephone Number">
-		          		<small class="error">Invalid entry</small>
+				          <input class="form-with-error" type="text" id="form-number"  placeholder="Your Telephone Number">
+		          			<small class="error">Invalid entry</small>
 
-				      		<textarea class="form-with-error" id="form-message" placeholder="Message..." ></textarea>
-  								<small class="error">Invalid entry: your message may contain bad words</small>
+				      	  <textarea class="form-with-error" id="form-message" placeholder="Message..." ></textarea>
+  							<small class="error">Invalid entry: your message may contain bad words</small>
 
-  								<a class="button" id="form-submit">Send Us Email</a>
+  						  <a class="button" id="form-submit">Send Us Email</a>
 				        </div>
 				      </div>
 				    </div>
@@ -128,7 +145,6 @@
 				<li><a href="#">Contact Us</a></li>
 				</ul>
 		</div>
-		<script type="js/holder.js"></script>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/foundation.js"></script>
 		<script src="js/jquery.flip.js"></script>

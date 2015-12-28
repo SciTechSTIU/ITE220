@@ -24,12 +24,26 @@ $(function(){
 				$("#head_tagline").height(200);
 			});
 
+			$(".error").hide();
+
 			$("#form-submit").on("click", function() {
+				var name = $("#form-name").val();
+				if (!$.isNumeric(name)) {
+					$(".error:eq(0)").show();
+				} else {
+					$(".error:eq(0)").hide();
+				}
 				var num = $("#form-number").val();
 				if (!$.isNumeric(num)) {
-					$(".error:first").show();
+					$(".error:eq(1)").show();
 				} else {
-					$(".error:first").hide();
+					$(".error:eq(1)").hide();
+				}
+				var msg = $("#form-message").val();
+				if (!$.isNumeric(msg)) {
+					$(".error:eq(2)").show();
+				} else {
+					$(".error:eq(2)").hide();
 				}
 			});
 
