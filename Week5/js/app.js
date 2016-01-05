@@ -28,7 +28,7 @@ $(function(){
 
 			$("#form-submit").on("click", function() {
 				var name = $("#form-name").val();
-				if (!$.isNumeric(name)) {
+				if ($.isNumeric(name)) {
 					$(".error:eq(0)").show();
 				} else {
 					$(".error:eq(0)").hide();
@@ -40,7 +40,7 @@ $(function(){
 					$(".error:eq(1)").hide();
 				}
 				var msg = $("#form-message").val();
-				if (!$.isNumeric(msg)) {
+				if (msg.indexOf("badwords") != -1 ) {
 					$(".error:eq(2)").show();
 				} else {
 					$(".error:eq(2)").hide();
