@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App 2</title>
+	<meta charset="utf-8" />
+    <link href="assets/css/app.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="location-title"></h1>
+            <img id="location-image" src="assets/img/loc1.jpg" alt="Location1" /> <!--Javascript query image src and alt-->
+        </header>
+        <nav>
+            <ul id="options">
+                <li><a href="#" class="unit">Celsius</a></li>
+                <li><a href="#" class="unit">Fahrenheit</a></li>
+            </ul>
+        </nav>
+        <section id="main">
+            <aside id="locations">
+                <ul id="location-names">
+                    <li><a href="" class="city">Bangkok</a></li>
+                    <li><a href="" class="city">London</a></li>
+                    <li><a href="" class="city">Dubai</a></li>
+                </ul>
+            </aside>
+            <section id="weather-updates">
+                <div id="location-details">
+                    <article id="location-weather">
+                        <h3>Weather Information</h3>
+                        <table>
+                            <tr>
+                                <th>Temperature:</th>
+                                <td id="temp"></td>
+                            </tr>
+                        </table>
+                    </article>
+                </div>
+            </section>
+        </section>
+        <footer>
+            <p id="copyright">&copy; Muhammad Athar 2016. All Rights Reserved.</p>
+        </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
