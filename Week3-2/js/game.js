@@ -1,5 +1,6 @@
 var game = {
-	answer: Math.floor((Math.random() * 100) + 1), // Need to random this value from 0-100
+	answer: Math.floor((Math.random() * 100) + 1),
+	
 	init: function() {
 		var self = this;
 		
@@ -80,11 +81,13 @@ var game = {
 	checkAnswer: function(self) {
 		var userValueEle = document.getElementById('userValue');
 		if (self.answer == userValueEle.value) {
-			alert("Congratulations! Correct answer");			
+			alert("Congratulations! Correct answer");	
 		} else if (self.answer > userValueEle.value) {
-			alert("Guessing number is less than the correct number"); 
+			alert("Guessing number is less than the correct number. Please try guessing again.");
+			userValueEle.value = null;
 		} else if (self.answer < userValueEle.value) {
-			alert("Guessing number is more than the correct number");
+			alert("Guessing number is more than the correct number. Please try guessing again.");
+			userValueEle.value = null;
 		}
 	}
 };
