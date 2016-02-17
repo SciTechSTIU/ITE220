@@ -6,10 +6,29 @@ function loadData(){
 	var famousCelebURL = "http://api.themoviedb.org/3/person/popular"+api; //Celebreties
 	var imageBaseURL = "http://image.tmdb.org/t/p/w92"; //Url for small images in the list
 	var imageBaseURL2 = "http://image.tmdb.org/t/p/w185"; //For large images
-
-
+	var genreListUrl = "http://api.themoviedb.org/3/genre/movie/list?api_key=ba9334384ab4cfdd9d0e8d8b60752a52";
+	var genreList = [];
 	/* SEARCH PART STARTS HERE */
 	//Viacheslav Litvinov
+
+
+	$.ajax({
+		method: "GET",
+		url: genreListUrl,
+		//jsonpCallback: 'jsonCallback',
+		contentType: "application/json",
+		dataType: 'jsonp',
+		success: function(json) {
+			for (var i = 0; i < json.genres.length; i++) {
+				//populate genre list
+				genreList[i] = json.genres[i];
+				console.log(genreList[i]);
+			}
+		},
+		error: function(e) {
+			console.log(e.message);
+		}
+	});
 
 	//click listener for the search button
 	$("#searchButton").on("click", function(){
@@ -246,7 +265,10 @@ function loadData(){
 				dialog += "<div data-role=\"header\">";
 				dialog += "<h1>Trivia</h1></div>";
 				dialog += "<div role=\"main\" class=\"ui-content\">";
-				dialog += "<h2>" + json.results[i].title + " (" + json.results[i].release_date.substring(0, 4) + ")</h2>";				
+				dialog += "<h2>" + json.results[i].title + " (" + json.results[i].release_date.substring(0, 4) + ")</h2>";
+				for (var z = 0; z < json.results[i].genre_ids[z]; z++) {
+
+				}
 				dialog += "<h3>Story:</h2>";
 				dialog += "<p>" + json.results[i].overview + "</p>";
 				
@@ -376,7 +398,7 @@ function loadData(){
 
 function bindEvents(){
 	$(".up-coming").bind("click", function(){
-		$( ":mobile-pagecontainer" ).pagecontainer( "change", "index.html" );
+		$( ":mobile-pagecontainer" ).pagecontainer( "change", "#up-coming" );
 	});
 	$(".popular-tv").bind("click", function(){
 		$( ":mobile-pagecontainer" ).pagecontainer( "change", "#popular-tv" );
