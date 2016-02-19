@@ -266,8 +266,15 @@ function loadData(){
 				dialog += "<h1>Trivia</h1></div>";
 				dialog += "<div role=\"main\" class=\"ui-content\">";
 				dialog += "<h2>" + json.results[i].title + " (" + json.results[i].release_date.substring(0, 4) + ")</h2>";
-				for (var z = 0; z < json.results[i].genre_ids[z]; z++) {
-
+				for (var z = 0; z < json.results[i].genre_ids.length; z++) {
+					for (var m = 0; m < genreList.length; m += 1) {
+						if (json.results[i].genre_ids[z] == genreList[m].id) {
+							dialog += genreList[m].name;
+							if (z + 1 < json.results[i].genre_ids.length) {
+								dialog += ", ";
+							}
+						}
+					}
 				}
 				dialog += "<h3>Story:</h2>";
 				dialog += "<p>" + json.results[i].overview + "</p>";
@@ -317,6 +324,16 @@ function loadData(){
 				dialog += "<h1>Trivia</h1></div>";
 				dialog += "<div role=\"main\" class=\"ui-content\">";
 				dialog += "<h2>" + json.results[i].name + " (" + json.results[i].first_air_date.substring(0, 4) + ")</h2>";
+				for (var z = 0; z < json.results[i].genre_ids.length; z++) {
+					for (var m = 0; m < genreList.length; m += 1) {
+						if (json.results[i].genre_ids[z] == genreList[m].id) {
+							dialog += genreList[m].name;
+							if (z + 1 < json.results[i].genre_ids.length) {
+								dialog += ", ";
+							}
+						}
+					}
+				}
 				dialog += "<h3>Story:</h3>";
 				dialog += "<p>" + json.results[i].overview + "</p>";
 				if(json.results[i].poster_path === null){

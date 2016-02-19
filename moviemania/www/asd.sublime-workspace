@@ -1,0 +1,300 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"l",
+				"length"
+			],
+			[
+				"genre",
+				"genreList"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"elS",
+				"elSeven"
+			],
+			[
+				"elF",
+				"elFive"
+			],
+			[
+				"prod",
+				"productList"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"li",
+				"link	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Bitnami/wampstack-5.5.31-0/apache2/htdocs/moviemania3/js/index.js",
+			"settings":
+			{
+				"buffer_size": 19425,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 104.0,
+		"last_filter": "Package Control: Inst",
+		"selected_items":
+		[
+			[
+				"Package Control: Inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"help",
+			"Package Control",
+			"Package Control: Install Package",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Bitnami/wampstack-5.5.31-0/apache2/htdocs/moviemania3",
+		"/C/Bitnami/wampstack-5.5.31-0/apache2/htdocs/moviemania3/js"
+	],
+	"file_history":
+	[
+		"/C/Bitnami/wampstack-5.5.31-0/apache2/htdocs/moviemania3/index.html",
+		"/D/Users/Muhammad/Documents/GitHub/moviemania/www/js/index.js",
+		"/D/Users/Muhammad/Documents/GitHub/moviemania/www/index.html",
+		"/C/Users/Muhammad/AppData/Roaming/Sublime Text 3/Packages/Emmet/Default (Windows).sublime-keymap",
+		"/C/Users/Muhammad/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/D/Users/Muhammad/Documents/GitHub/Contact Info App/www/js/index.js",
+		"/D/Users/Muhammad/Documents/GitHub/Contact Info App/www/index.html",
+		"/d/Users/Muhammad/Desktop/Exercise Files/Ch01/01_01/snippets/section_content.html",
+		"/D/Users/Muhammad/Documents/GitHub/Week5/css/app.css",
+		"/D/Users/Muhammad/Documents/GitHub/Week5/js/app.js",
+		"/D/Users/Muhammad/Documents/GitHub/Week5/index.html",
+		"/D/Users/Muhammad/Documents/hello_world.py",
+		"/D/Users/Muhammad/Documents/GitHub/Week4-2/basic-jquery.html",
+		"/d/Users/Muhammad/Desktop/midterm/js/app.js",
+		"/d/Users/Muhammad/Desktop/midterm/index.html",
+		"/D/Users/Muhammad/Documents/GitHub/Week4-2/js/basic-example.js",
+		"/d/Users/Muhammad/Desktop/midterm/css/app.css",
+		"/D/Users/Muhammad/Documents/GitHub/Week4-1/js/basic-example.js",
+		"/D/Users/Muhammad/Documents/GitHub/Week4-1/index.html",
+		"/D/Users/Muhammad/Documents/GitHub/Week3-2/js/game.js",
+		"/D/Users/Muhammad/Documents/GitHub/Week3-2/index.html",
+		"/D/Users/Muhammad/Documents/GitHub/Week3-1/index.html",
+		"/D/Users/Muhammad/Documents/GitHub/Week3-1/js/window-example.js",
+		"/D/Users/Muhammad/Documents/GitHub/Week2-2/js/calendar.js",
+		"/D/Users/Muhammad/Documents/GitHub/Week2-2/js/object-literal.js",
+		"/D/Users/Muhammad/Documents/GitHub/Week2-2/index.html",
+		"/D/Users/Muhammad/Documents/GitHub/Week2-1/js/add-content.js",
+		"/D/Users/Muhammad/Documents/GitHub/Week2-1/index.html",
+		"/D/Users/Muhammad/Documents/GitHub/Cordova/ch/CH/www/js/index.js",
+		"/D/Users/Muhammad/Documents/GitHub/Cordova/ch/CH/www/index.html",
+		"/D/Users/Muhammad/Documents/GitHub/Cordova/ch/www/js/index.js",
+		"/D/Users/Muhammad/Documents/GitHub/Cordova/ch/www/index.html",
+		"/D/Program Files (x86)/Steam/steamapps/common/Doom 3/base/autoexec.cfg",
+		"/D/Users/Muhammad/Documents/GitHub/Week4-1/basic-jquery.html",
+		"/D/Users/Muhammad/Documents/GitHub/Week4-1/css/c07.css",
+		"/D/Users/Muhammad/Desktop/Week5/js/jquery.flip.js",
+		"/d/Users/Muhammad/Desktop/Week5/js/foundation.js",
+		"/d/Users/Muhammad/Desktop/Week5/js/app.js",
+		"/D/Users/Muhammad/Desktop/Week5/index.html",
+		"/D/Users/Muhammad/Desktop/Week5/css/app.css",
+		"/D/Users/Muhammad/Documents/game.js",
+		"/D/Users/Muhammad/Documents/GitHub/Week2-2/css/c03.css",
+		"/D/Users/Muhammad/Documents/GitHub/Week3-2/random-guessing-number-game.html",
+		"/D/Users/Muhammad/Documents/GitHub/Week3-1/window.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"head",
+			"\"",
+			"		\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "C:\\Bitnami\\wampstack-5.5.31-0\\apache2\\htdocs\\moviemania3"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Bitnami/wampstack-5.5.31-0/apache2/htdocs/moviemania3/js/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19425,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15720,
+								15720
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4632.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
